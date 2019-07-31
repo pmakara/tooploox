@@ -8,11 +8,11 @@ namespace ToopLoox
 class MedianCalculator
 {
 public:
-	void addNumber(int value);
-	double getMedian() const;
+    void addNumber(int value);
+    double getMedian() const;
 
 private:
-	OrderStatsTree<int> tree;
+    OrderStatsTree<int> tree;
 };
 
 }

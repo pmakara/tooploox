@@ -65,6 +65,12 @@ private:
     };
 
 public:
+    OrderStatsTree() = default;
+    OrderStatsTree(const OrderStatsTree& other) = delete;
+    OrderStatsTree(OrderStatsTree&& other) = delete;
+    OrderStatsTree& operator=(const OrderStatsTree& other) = delete;
+    OrderStatsTree& operator=(OrderStatsTree&& other) = delete;
+
     ~OrderStatsTree()
     {
         if (root)
